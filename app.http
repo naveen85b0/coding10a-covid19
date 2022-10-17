@@ -1,0 +1,68 @@
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username": "christopher_phillips",
+    "password": "christy@123"
+}
+
+
+
+###
+get http://localhost:3000/states
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY2MDA5MDEyfQ.ypkHbBc_KfBSjXIrtGAw5nTS2D-HKCpAjz1inuC5INg
+
+
+###
+get http://localhost:3000/states/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY2MDA5MDEyfQ.ypkHbBc_KfBSjXIrtGAw5nTS2D-HKCpAjz1inuC5INg
+
+
+###
+
+POST http://localhost:3000/districts/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY2MDA5MDEyfQ.ypkHbBc_KfBSjXIrtGAw5nTS2D-HKCpAjz1inuC5INg
+
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+
+###
+get http://localhost:3000/districts/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY2MDA5MDEyfQ.ypkHbBc_KfBSjXIrtGAw5nTS2D-HKCpAjz1inuC5INg
+
+
+###
+
+delete http://localhost:3000/districts/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY2MDA5MDEyfQ.ypkHbBc_KfBSjXIrtGAw5nTS2D-HKCpAjz1inuC5INg
+
+
+###
+
+put http://localhost:3000/districts/3/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY2MDA5MDEyfQ.ypkHbBc_KfBSjXIrtGAw5nTS2D-HKCpAjz1inuC5INg
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+
+###
+get http://localhost:3000/states/2/stats/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY2MDA5MDEyfQ.ypkHbBc_KfBSjXIrtGAw5nTS2D-HKCpAjz1inuC5INg
